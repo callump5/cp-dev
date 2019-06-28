@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "cp-dev-1ca85",
+    "default": "cp-dev-1ca85"
+  }
+}
