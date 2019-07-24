@@ -1,0 +1,30 @@
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+}
+
+#logo h1 {
+  font-size: 24px;
+}
+
+#logo h2 {
+  font-size: 20px;
+}
+
+#navbar ul {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between ;
+  align-items: center;
+}
