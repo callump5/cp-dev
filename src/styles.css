@@ -22,8 +22,15 @@ h1 {
   flex-direction: row;
   align-items: stretch;
   justify-content: space-between;
-
 }
+
+.flex-row-alternate {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
 
 article {
   margin-bottom: 20px;

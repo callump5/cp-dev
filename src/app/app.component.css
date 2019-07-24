@@ -108,3 +108,32 @@ background-size: 100% 100%;
 .white {
   padding: 40px 0 20px 0;
 }
+
+.text-text {
+  width: 70%;
+}
+
+.site-img {
+  float: right;
+  height: 185px;
+  width: auto;
+  max-width: 240px;
+  background-image: url("../assets/responsive.png");
+  background-size: 100%;
+  padding: 9px 9px 20px 9px;
+  background-repeat: no-repeat;
+}
+
+.site-img img{
+  height: 74%;
+  width: 100%;
+}
+
+.text-text {
+  width: calc(100% - 300px);
+}
+
+.flex-row.projects {
+  align-items: center;
+  flex-direction: row;
+}
