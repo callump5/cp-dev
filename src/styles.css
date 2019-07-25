@@ -13,11 +13,18 @@ h1 {
 
 
 .container {
-  width: 70%;
+  width: 55%;
   margin: 0 auto;
 }
 
 .flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-row-strech {
   display: flex;
   flex-direction: row;
   align-items: stretch;

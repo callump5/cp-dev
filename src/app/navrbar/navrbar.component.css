@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   background-color: transparent;
   position: absolute;
@@ -28,3 +28,6 @@
   justify-content:space-between ;
   align-items: center;
 }
+
+
+
