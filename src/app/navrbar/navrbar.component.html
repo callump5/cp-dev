@@ -1,13 +1,52 @@
-<div id="navbar">
-  <div id="logo">
-    <h1>Callum Pullinger</h1>
-    <hr>
-    <h2>Full Stack Web Developer</h2>
+
+<nav id="navbar">
+
+  <div id="navbar-header">
+    <div id="logo">
+      <h1>Callum Pullinger</h1>
+      <hr>
+      <h2>Full Stack Web Developer</h2>
+    </div>
+
+    <img alt="Menu Toggle" id="toggle" src="../../assets/menu-white.png">
   </div>
 
-  <ul>
+  <ul id="nav-links">
     <li>About Myself</li>
     <li>Case Studies</li>
     <li>Get Started</li>
   </ul>
-</div>
+</nav>
+
+
+
+
+
+    <script type="text/javascript">
+
+      $(document).ready(function () {
+
+         function openNav() {
+            $(this).css('display', 'flex');
+            nav = true;
+         }
+
+        function closeNav() {
+            $(this).css('display', 'none');
+            nav = false;
+        }
+
+        function toggleNav() {
+            nav ? closeNav() : openNav();
+        }
+
+        $( "#toggle" ).click(function() {
+            $( "#nav-links" ).toggle( "fast", function() {
+              toggleNav()
+            });
+        });
+
+      });
+
+    </script>
+

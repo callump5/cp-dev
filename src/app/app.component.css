@@ -47,7 +47,7 @@ right: 0;
 background-size: 100% 100%;
 }
 
-#content h1, #content p, #content li, #content i, #content a {
+#content h1, #content p, #content li, #content i, #content a, span {
   color: #252525;
 }
 
@@ -193,7 +193,7 @@ background-size: 100% 100%;
 .tech {
   margin: 40px auto 0 auto;
 }
-.tech > .flex-row {
+.tech.flex-row {
   justify-content: space-around;
 }
 
@@ -242,5 +242,26 @@ footer ul {
 @media screen and (max-width: 700px) {
   footer span {
     display: none;
+  }
+  .flex-row.projects, .flex-row-alternate {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .text-text {
+    width: unset;
+  }
+
+  .tech {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0
+  }
+
+  #side-contact ul {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+    width: 100%;
   }
 }

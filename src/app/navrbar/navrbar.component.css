@@ -1,16 +1,25 @@
+#navbar h1, #navbar h2, #navbar li {
+  color: white;
+  transition: color 1s;
+}
+
 #navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  margin: 0 auto;
-  background-color: transparent;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  padding: 10px;
+  transition: background-color 1s;
+
+}
+#navbar-header {
+
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
 }
 
 #logo h1 {
@@ -21,13 +30,64 @@
   font-size: 20px;
 }
 
+#navbar-header img {
+  width: 35px;
+  height: auto;
+}
+
 #navbar ul {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content:space-between ;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
+
+#nav-links li {
+  padding: 10px;
+  border-bottom: gray 1px solid;
+  text-align: center;
+  width: 100%;
+
+}
+
+#nav-links {
+  border-top: 1px solid gray;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+@media screen and (min-width: 500px){
+
+  #navbar {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #toggle {
+    display: none;
+  }
+
+  #navbar ul {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #nav-links {
+    border: none;
+  }
+
+  #nav-links li {
+    padding: 0;
+    border-bottom: none;
+    width: unset;
+
+  }
+}
+
 
 
 

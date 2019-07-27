@@ -3,7 +3,7 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-  color: white;
+  color: black;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -41,4 +41,21 @@ h1 {
 
 article {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px){
+  .container {
+    width: 70%;
+  }
+
+.flex-row-strech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span {
+  display: none;
+}
 }
